@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit to celsius</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>cm to inches</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="Fahrenheit">
+        </div>
+        <div>
+            <button type="submit" onclick="changeClick()">Convert to celsius</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        
+function changeClick(){
+   
+   let fahVal = document.getElementById("input").value
+   let celhVal = (fahVal-32)*5/9
+   let result = document.getElementById("result")
+   result.innerHTML = celhVal.toFixed(2) + "degrees"
+   
+   }
+    </script>
+</body>
+</html>
